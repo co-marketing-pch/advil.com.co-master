@@ -1,0 +1,45 @@
+.jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane { 	
+	position: absolute;
+}
+
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	width: 11px;
+	height: 100%;
+}
+
+div.product-labeling-content .jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 11px;
+}
+
+div.gmapslivesearch-stores .jspTrack {  
+  position: relative;
+}
+
+div.product-labeling-content .jspTrack {  
+  position: relative;
+}
+
+.jspDrag {  
+  position: relative;
+  top: 0;
+  left: 1px;
+  cursor: pointer;
+  height: 73px !important;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}

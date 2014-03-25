@@ -1,0 +1,64 @@
+/**
+* @file print.css
+* Styles for general site print structure for Chapstick Website.
+*/
+
+
+* {
+  color: #000;
+  font: 13px/1.231 arial,helvetica,clean,sans-serif;
+}
+
+
+h1, h2 {
+  font-size: 153.9%;	
+  float: none !important;
+}
+
+h3 {
+  font-size: 138.5%;	
+}
+
+p {
+  font-size: 93%;
+}
+
+input,
+a {
+  display: inline;
+  height: auto;
+  width: auto;
+  background: none;
+  text-indent: normal;
+}
+
+div#block-menu-menu-top-right,
+div#block-menu-menu-subsites,
+div#wrapper_navigation,
+div.views-field-field-thumbnail-selected-1,
+div#wrapper_footer,
+div.region-tools,
+form#views-exposed-form-faqs-faqs-page {
+  display: none;
+}
+
+cufon cufontext {
+  display: inline !important;
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  letter-spacing: normal !important; 
+  word-spacing: normal;
+}
+
+canvas, cufoncanvas, cvml{
+  display: none !important; 
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+cufon cufoncanvas,cvml\:shape,cvml\:rect,cvml\:fill,cvml\:shadow{
+  display:none;
+  visibility: hidden !important;
+} 

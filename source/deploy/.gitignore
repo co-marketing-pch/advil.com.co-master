@@ -1,0 +1,11 @@
+/*.php.orig
+settings.php
+
+files/js/*
+files/css/*
+files/tmp/*
+files/xmlsitemap/*
+files/styles/thumbnail/*
+tmp/*
+private/files/.htaccess
+private/temp

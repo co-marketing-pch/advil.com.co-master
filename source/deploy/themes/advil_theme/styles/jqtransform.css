@@ -1,0 +1,208 @@
+/**
+* @file jqtransform.css
+* Styles for form style (just for the needed elements)
+*/
+
+/**
+* Input Text
+*/
+
+tbody {
+    border:0;
+}
+
+div.jqTransformInputWrapper {
+  width: 288px !important;	
+}
+
+div.jqTransformInputInner div {
+  height: 26px;
+  width: 288px;
+}
+
+div.jqTransformInputInner{
+  background: url(../images/transform/bkg_input.png) no-repeat 0 3px;  
+  padding: 9px 9px 9px 12px;
+}
+
+div.jqTransformInputInner input.form-text {
+  border: 0px;
+  width: 261px;
+  color: #4c4c4c;
+  font-size: 11px;
+  outline:none;
+}
+
+/**
+* Radios
+*/
+
+.jqTransformRadioWrapper {
+  float:left;
+  display:block;
+}
+
+.jqTransformRadio {
+  background: url(../images/transform/radio.png) no-repeat center 5px;
+  vertical-align: middle;
+  height:19px;
+  width:19px;
+  display:block;
+  margin-left: -3px;
+}
+
+.jqTransformRadio:focus{
+  outline:1px dotted !important;
+}
+
+/**
+* Checkboxes
+*/
+
+span.jqTransformCheckboxWrapper {
+  display: block;float: left;
+  margin-top: 7px;
+}
+
+a.jqTransformCheckbox {
+  background: url(../images/transform/checkbox3.png) no-repeat center 2px;
+  vertical-align: middle;
+  height: 16px;
+  width: 18px;
+  display: block;
+}
+
+.jqTransformCheckbox: focus {
+  outline: 1px dotted;
+}
+
+.jqTransformCheckbox.jqTransformChecked { 
+  background-position: bottom center;
+}
+
+
+a.jqTransformChecked { 
+  background-position: center -19px;
+}
+
+
+/**
+* Selects
+*/
+.jqTransformSelectWrapper {
+  width: 276px;
+  position: relative;
+  height: 28px;
+  background: url(../images/transform/bkg_input.png) no-repeat  left top;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.openSelect.jqTransformSelectWrapper {
+  background: #fff;
+  height: 28px;
+}
+
+.jqTransformSelectWrapper.openSelect {
+  width: 275px;
+  height: 28px;
+  margin-right: 9px;
+}
+
+.jqTransformSelectWrapper div span {
+  cursor: pointer;
+  float: none;
+  font-size: 11px;
+  height: 19px;
+  line-height: 19px;
+  overflow: hidden;
+  padding: 5px 5px 0 10px;
+  position: absolute;
+  font-style: italic;
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen { 
+  background: url(../images/transform/select_combo.png) no-repeat scroll left top transparent;
+  display: block;
+  height: 28px;
+  position: absolute;
+  right: -1px;
+  width: 29px;
+}
+
+.jqTransformSelectWrapper  a.jqTransformSelectOpen: focus, 
+.jqTransformSelectWrapper ul: focus, 
+.jqTransformSelectWrapper ul li: focus, 
+.jqTransformSelectWrapper ul li a: focus {
+  outline: 1px dotted;
+}
+
+.jqTransformSelectWrapper ul {
+  background: #fff;
+  border: 1px solid #ededee;
+  display: none;
+  list-style: none outside none;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 27px;
+  left: -1px;
+  width: 275px !important;
+  z-index: 10;
+}
+
+
+.jqTransformSelectWrapper li {
+  overflow: hidden;
+  width: 275px;
+  margin: 0 auto;
+  display: block;
+}
+
+.jqTransformSelectWrapper ul a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #4c4c4c;
+  font-size: 11px;
+  height: 31px;
+  line-height: 31px;
+}
+
+
+.jqTransformSelectWrapper ul a:hover,
+.jqTransformSelectWrapper ul a.selected {
+  background: #d2d2d2;
+}
+
+
+/**
+* text-area
+*/
+
+
+div.form-textarea-wrapper  {
+  background: url("../images/transform/textarea.png") no-repeat scroll left top transparent;
+  border: 0 none;
+  height: 138px;
+  position: relative;
+  width: 563px;
+  padding:8px;
+}
+
+
+.jqTransformTextarea textarea#edit-body  {
+  border: 0 none;
+  height: 136px;
+  position: relative;
+  width: 560px;
+}
+
+
+
+/**
+* Hidden Elements
+*/
+
+.jqTransformHidden {display: none;}

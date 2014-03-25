@@ -1,0 +1,37 @@
+name = Advil
+description = Base-Theme for Advil WebSites
+base theme = pfizer
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = styles/general.css
+stylesheets[screen][] = styles/content.css
+stylesheets[screen][] = styles/jqtransform.css
+stylesheets[screen][] = styles/scrollpane.css
+stylesheets[print][] = styles/print.css
+
+
+scripts[] = scripts/jquery.jqtransform.js
+scripts[] = scripts/jquery.cookie.js
+scripts[] = scripts/jwplayer.js
+scripts[] = scripts/jquery.cycle.all.js
+scripts[] = scripts/jquery.printElement.min.js
+scripts[] = scripts/jquery.jscrollpane.min.js
+scripts[] = scripts/lgCarousel.js
+scripts[] = scripts/cufon-yui.js
+scripts[] = fonts/Avenir_Heavy_700.font.js
+scripts[] = fonts/Avenir_Light_300.font.js
+scripts[] = fonts/Avenir_Medium_550.font.js
+scripts[] = scripts/theme_general.js
+
+regions[navigation] = Navigation
+regions[mega_navigation] = Mega Navigation
+regions[header] = Header
+regions[carousel] = Carousel
+regions[tools] = Tools
+regions[left_sidebar] = Left sidebar
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[right_sidebar] = Right sidebar
+regions[footer] = Footer

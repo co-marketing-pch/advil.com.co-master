@@ -1,0 +1,69 @@
+<?php
+/**
+ * @file
+ * Install file for Omniture module.
+ */
+
+/**
+ * Implementation of hook_install().
+ */ 
+function omniture_install() {
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */ 
+function omniture_uninstall() {
+  db_delete('variable')->condition('name', 'omniture_%', 'LIKE')->execute();
+}
+
+/**
+ * Implements hook_schema().
+ */
+function omniture_schema() {
+
+  $schema['omniture'] = array(
+    'description' => 'Omniture pages specific configuration.',
+    'fields' => array(
+      'oid' => array(
+        'description' => 'The primary identifier for an entry.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'value' => array(
+        'description' => 'Page URL or content type machine name.',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'type' => array(
+        'description' => 'Wheter it is an url or a content type.',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => 'url',
+      ),
+      'source' => array(
+        'description' => 'Javascript source to be added.',
+        'type' => 'blob',
+        'not null' => TRUE,
+        'size' => 'big',
+      ),
+    ),
+    'unique keys' => array(
+      'value' => array(
+        'value',
+        'type',
+      ),
+    ),
+    'indexes' => array(
+      'oid' => array('oid'),
+      'type' => array('type'),
+    ),
+    'primary key' => array('oid'),
+  );
+  
+  return $schema;
+}
